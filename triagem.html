@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triagem de Empresas |</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a class="brand" href="index.html">Ibchanges </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="triagem.html">Triagem de Empresas</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="depoimentos.html">Depoimentos</a></li>
+            <li><a href="regras.html">Regras de Uso</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <h1>Triagem Empreendedora</h1>
+        <p>
+          Preencha o formulário e conte para nós onde sua empresa está hoje. Utilizamos essas
+          informações para conectar você à trilha ideal dentro do Ibmec Hubs e indicar as
+          melhores oportunidades de crescimento.
+        </p>
+      </section>
+
+      <section class="form-wrapper">
+        <form>
+          <div>
+            <label for="empresa">Nome da empresa</label>
+            <input id="empresa" type="text" name="empresa" placeholder="Ex.: InovaTech Soluções" required />
+          </div>
+
+          <div>
+            <label for="responsavel">Responsável pela inscrição</label>
+            <input id="responsavel" type="text" name="responsavel" placeholder="Nome completo" required />
+          </div>
+
+          <div class="grid grid-3" style="gap: 18px;">
+            <div>
+              <label for="email">E-mail corporativo</label>
+              <input id="email" type="email" name="email" placeholder="contato@empresa.com" required />
+            </div>
+            <div>
+              <label for="telefone">Telefone/WhatsApp</label>
+              <input id="telefone" type="text" name="telefone" placeholder="(00) 00000-0000" />
+            </div>
+            <div>
+              <label for="cnpj">CNPJ</label>
+              <input id="cnpj" type="text" name="cnpj" placeholder="00.000.000/0000-00" required />
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>Já possui vínculo com o Ibmec Hubs?</legend>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="vinculo" value="sim" />
+                <span class="radio-option">Sim, atualmente conectado</span>
+              </label>
+              <label>
+                <input type="radio" name="vinculo" value="nao" checked />
+                <span class="radio-option">Ainda não possuo vínculo</span>
+              </label>
+              <label>
+                <input type="radio" name="vinculo" value="ex" />
+                <span class="radio-option">Já tive vínculo anteriormente</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Porte da empresa</legend>
+            <div class="size-options">
+              <label>
+                <input type="radio" name="porte" value="startup" checked />
+                <span class="size-option">Startup ou Pequena Empresa</span>
+              </label>
+              <label>
+                <input type="radio" name="porte" value="media" />
+                <span class="size-option">Médio Porte</span>
+              </label>
+              <label>
+                <input type="radio" name="porte" value="grande" />
+                <span class="size-option">Grande Empresa</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="atuacao">Área de atuação</label>
+            <input id="atuacao" type="text" name="atuacao" placeholder="Ex.: Educação, Saúde, Tecnologia" required />
+          </div>
+
+          <div>
+            <label for="demanda">Qual o tipo de demanda da empresa?</label>
+            <textarea id="demanda" name="demanda" placeholder="Descreva necessidades, desafios ou oportunidades que busca acelerar" required></textarea>
+          </div>
+
+          <div>
+            <label for="objetivos">Objetivos prioritários na parceria</label>
+            <textarea id="objetivos" name="objetivos" placeholder="Networking, captação, expansão, transformação digital..." ></textarea>
+          </div>
+
+          <button class="button primary" type="submit">Enviar para análise</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <h2>Como sua inscrição é avaliada</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Contexto do negócio</h3>
+            <p>
+              Observamos o momento da empresa, sua proposta de valor e diferenciais competitivos
+              para criar conexões coerentes com o ecossistema Ibmec.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Potencial de impacto</h3>
+            <p>
+              Avaliamos o alcance da solução, maturidade de gestão e capacidade de gerar novos
+              projetos, investimentos e parcerias.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Alinhamento estratégico</h3>
+            <p>
+              Relacionamos suas demandas com trilhas de conhecimento, mentorias e hubs parceiros
+              para acelerar a execução com precisão.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Pronto para crescer com o Ibmec Hubs? Envie sua triagem e vamos construir juntos a
+        próxima fase da sua empresa.
+      </p>
+    </footer>
+  </body>
+</html>
